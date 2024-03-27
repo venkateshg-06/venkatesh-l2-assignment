@@ -70,10 +70,11 @@ body {
   }
   .jhon-wick-section{
     background-image: url("Poster.png");
-    min-height: 50vh;
+    min-height: 70vh;
     background-size: cover;
     position: relative;
-    padding: 20px;
+    padding: 20px;display: flex;
+    align-items: center;
   }
   .layer{
     background-color: hsla(0, 0%, 0%, 0.1);
@@ -82,20 +83,20 @@ body {
     position: absolute;
   }
   .jhon-wick-text-container{
-    position: absolute;
-    width: 50%;
+    
+    width: 45%;
     left: 20px;
     top: 30px;
   }
   .jhon-wick-title{
     font-family: "DM Sans";
-    font-size: 20px;
+    font-size: 30px;
     color: hsla(0, 0%, 100%, 1);
 
   }
   .jhon-wick-description{
     font-family: "DM Sans";
-    font-size: 14px;
+    font-size: 18px;
     color: hsla(0, 0%, 100%, 1);
 
   }
@@ -219,6 +220,7 @@ font-weight: bold;
     width: 50%;
     padding: 10px;
 }
+
 }
 #sliderContainer{
   padding: 20px;

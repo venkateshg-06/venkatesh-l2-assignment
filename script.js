@@ -29,6 +29,7 @@ function fetchImagesAndCreateSlider(resData) {
         </ul>
       </div>
     `;
+
     newSliderContainer.appendChild(newSlider);
     sliderContainer.appendChild(newSliderContainer);
 
@@ -58,21 +59,6 @@ function fetchImagesAndCreateSlider(resData) {
                   </div>
               </div>`
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
