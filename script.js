@@ -3,16 +3,17 @@ var fisrtContainer = document.getElementById('firstData-container')
 var favContainer = document.getElementById("fav-container")
 var headingEle = document.querySelector(".heading-ele")
 var iconelement  = document.getElementById("icon-element")
+var sliderContainer = document.getElementById("sliderContainer")
 
         
 function fetchImagesAndCreateSlider(resData) {
-      
+  sliderContainer.textContent = "";
     let remainingData = resData.photos.slice(1)
     const newSliderContainer = document.createElement('div');
     newSliderContainer.classList.add('slider-container');
     const newSlider = document.createElement('div');
     newSlider.classList.add('splide');
-
+     
     const slideList = remainingData.map(each => `
     <li class="splide__slide">
     <div style="width:90%;" id=${each.id}">
