@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0;
+
+}
+*{
+    box-sizing: border-box;
+    font-family: "dm sans";
+}
+/* Frame styles */
+.frame {
+    background-color: black;
+    padding: 20px;
+    /* Set background color */
+    width: 100%; /* Make frame full-width */
+    height: 30px; /* Set height of the frame */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+  }
+  
+  /* Text styles */
+  .text {
+    color: hsla(0, 0%, 100%, 1); 
+    font-size: 14px; /* Set font size */
+    text-transform: uppercase; /* Capitalize text */
+  }
+  /* Header styles */
+.header {
+    background-color:#fff;
+    color:black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  
+  /* Navigation links styles */
+  .left-links a, .right-links svg {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  /* Logo styles */
+
+  /* Responsive styles for viewport width below 779px */
+  @media screen and (max-width: 779px) {
+    .left-links, .right-links {
+      display: none;
+    }
+  
+    .logo {
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+
+  .top-section{
+    position:relative;
+    
+    
+  }
+  .jhon-wick-section{
+    background-image: url("Poster.png");
+    min-height: 50vh;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+  }
+  .layer{
+    background-color: hsla(0, 0%, 0%, 0.1);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .jhon-wick-text-container{
+    position: absolute;
+    width: 50%;
+    left: 20px;
+    top: 30px;
+  }
+  .jhon-wick-title{
+    font-family: "DM Sans";
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, 1);
+
+  }
+  .jhon-wick-description{
+    font-family: "DM Sans";
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 1);
+
+  }
+  .watch-button{
+    background-color: hsla(345, 83%, 41%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    height: 36px;
+    width: 150px;
+    border-radius: 6px;
+    border: none;
+
+  }
+
+.search-input {
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5cdcd;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    background-color: #fff;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+  
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: black;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+  }
+  .splide__slide{
+    position: relative;
+  }
+  
+  .naviagation-button{
+    background-color: hsla(345, 83%, 41%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    height: 36px;
+    width: 150px;
+    border-radius: 6px;
+    border: none;
+  }
+  .naviagation-button a{
+   color: #fff;
+   text-decoration: none;
+  }
+  #firstData-container{
+  margin-top: 20px
+  }
+
+  .icon {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    border-radius: 50%;
+    
+  }
+  .slider-image-name{
+color: black;
+font-weight: bold;
+
+  }
+
+.slider-photographer{
+    color: grey;
+}
+.first-image-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+.fisrt-image{
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+}
+@media screen and (min-width:600px){
+.fisrt-image{
+    margin-right: 15px;
+}
+.first-content-container{
+    width: 50%;
+    padding: 10px;
+}
+}
+#sliderContainer{
+  padding: 20px;
+}
+#author{
+    color:hsla(345, 83%, 41%, 1) ;
+}
+.Similar-result{
+    font-family: "Dm Sans";
+    margin-left: 10px;
+}
+.playing {
+
+    padding-right: 5px;
+}
