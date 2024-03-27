@@ -6,9 +6,9 @@ var iconelement  = document.getElementById("icon-element")
 var sliderContainer = document.getElementById("sliderContainer")
 
         
-function fetchImagesAndCreateSlider(resData) {
+function createSlider(resultData) {
   sliderContainer.textContent = "";
-    let remainingData = resData.photos.slice(1)
+    let remainingData = resultData.photos.slice(1)
     const newSliderContainer = document.createElement('div');
     newSliderContainer.classList.add('slider-container');
     const newSlider = document.createElement('div');
@@ -17,7 +17,7 @@ function fetchImagesAndCreateSlider(resData) {
     const slideList = remainingData.map(each => `
     <li class="splide__slide">
     <div style="width:90%;" id=${each.id}">
-       <i class="fa-regular fa-heart icon" id="icon-element"></i>
+       <i class="fa-regular fa-heart icon" id="icon-element" ></i>
        <img src="${each.src.small}" alt="Image" style="width:100%;height:200px;">
       <p class="slider-image-name">${each.alt}</p>
       <p class="slider-photographer">${each.photographer}</p>
@@ -45,8 +45,8 @@ function fetchImagesAndCreateSlider(resData) {
     }).mount();
   }
 
-  function displayFirst(resData){
-      let firstData = resData.photos[0]
+  function displayFirstItem(result){
+      let firstData = result.photos[0]
       console.log(firstData)
       fisrtContainer.innerHTML = `
               <div class="first-image-container">
@@ -94,8 +94,8 @@ searchInput.addEventListener("keypress", function(event) {
              async function display(){
                  let result = await getResult()
                  console.log(result)
-                 displayFirst(result)
-                 fetchImagesAndCreateSlider(result)
+                 displayFirstItem(result)
+                 createSlider(result)
                  let {photos} = result
                  console.log(photos)
              }
